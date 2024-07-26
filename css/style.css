@@ -310,3 +310,9 @@ nav {
     margin-top: 50px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .home {
+    margin-top: -268px;
+  }
+}
