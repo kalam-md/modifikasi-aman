@@ -15,12 +15,10 @@ body {
 
 nav {
   background-color: white;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  z-index: 1000; /* Ensure it is above other content */
+  background-color: #eab62f;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 108px;
 }
 
 .navbar {
@@ -28,15 +26,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
-  background-color: white;
+  padding: 14px 0;
+  background-color: #eab62f;
   margin: 0 auto;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .nav-brand {
@@ -67,12 +59,12 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #f48535;
+  color: white;
 }
 
 /* home */
 .home {
-  margin-top: 100px;
+  /* margin-top: 98px; */
   height: 80vh;
   background-size: cover;
   background-position: center;
@@ -81,6 +73,11 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.home > video {
+  width: 100%;
 }
 
 /* feature */
@@ -95,10 +92,14 @@ nav {
   margin: 0 auto;
 }
 
+.feature-title > h1 {
+  color: #eab62f;
+}
+
 .feature-body {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 15px;
 }
 
@@ -108,9 +109,14 @@ nav {
   border-radius: 5px;
   display: flex;
   align-items: center;
-  background: url("../assets/bengkel.jpg");
+  background: linear-gradient(
+      to right,
+      rgba(151, 49, 49, 1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../assets/lampu.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 35%;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -119,9 +125,9 @@ nav {
 
 .feature-card:hover {
   background: linear-gradient(rgba(151, 49, 49, 1), rgba(0, 0, 0, 0.5)),
-    url("../assets/bengkel.jpg");
+    url("../assets/lampu.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 45%;
   background-repeat: no-repeat;
 }
 
@@ -148,10 +154,61 @@ nav {
   margin-top: 10px;
 }
 
+.feature-card-new {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba(151, 49, 49, 1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../assets/knalpot.jpg");
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.5s ease-in-out;
+}
+
+.feature-card-new:hover {
+  background: linear-gradient(rgba(151, 49, 49, 1), rgba(0, 0, 0, 0.5)),
+    url("../assets/knalpot.jpg");
+  background-size: cover;
+  background-position: center 65%;
+  background-repeat: no-repeat;
+}
+
+.feature-card-new-body {
+  padding: 15px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.feature-card-new:hover .feature-card-new-body {
+  opacity: 1;
+}
+
+.feature-card-new-body h4 {
+  font-size: 20px;
+}
+
+.feature-card-new-body p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 /* contact */
 .contact {
   max-width: 70%;
-  padding: 100px 0;
+  padding: 20px 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -165,7 +222,7 @@ nav {
 }
 
 .contact-form button {
-  background-color: #dc6b19;
+  background-color: #eab62f;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -228,13 +285,13 @@ nav {
   }
 
   .home {
-    margin-top: 130px;
+    margin-top: -248px;
   }
 
   .feature {
     max-width: 90%;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: -200px;
   }
 
   .feature-body {
