@@ -14,9 +14,8 @@ body {
 }
 
 nav {
-  background-color: white;
   background-color: #eab62f;
-  width: 100%;
+  max-width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,6 +62,7 @@ nav {
 }
 
 /* home */
+
 .home > iframe {
   width: 100%;
   height: 100vh;
@@ -87,13 +87,13 @@ nav {
 .feature-body {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
 .feature-card {
-  width: 100%;
-  height: 400px;
+  min-width: 100%;
+  height: 250px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -133,8 +133,8 @@ nav {
   opacity: 1;
 }
 
-.feature-card-body h4 {
-  font-size: 20px;
+.feature-card-body h1 {
+  font-size: 24px;
 }
 
 .feature-card-body p {
@@ -143,8 +143,8 @@ nav {
 }
 
 .feature-card-new {
-  width: 100%;
-  height: 400px;
+  min-width: 100%;
+  height: 250px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -184,13 +184,46 @@ nav {
   opacity: 1;
 }
 
-.feature-card-new-body h4 {
-  font-size: 20px;
+.feature-card-new-body h1 {
+  font-size: 24px;
 }
 
 .feature-card-new-body p {
   font-size: 16px;
   margin-top: 10px;
+}
+
+.feature-detail {
+  color: #eab62f;
+}
+
+/* modifikasi */
+.modifikasi {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.modifikasi > h1 {
+  color: #eab62f;
+  margin-bottom: 30px;
+}
+
+.modifikasi-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+
+.modifikasi-title > img {
+  width: 200px;
+}
+
+.modifikasi-title > p {
+  text-align: justify;
 }
 
 /* contact */
@@ -280,7 +313,7 @@ nav {
   .feature {
     max-width: 90%;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .feature-body {
@@ -290,6 +323,17 @@ nav {
     margin-top: -5px;
   }
 
+  .modifikasi {
+    display: flex;
+    margin-top: 40px;
+    max-width: 90%;
+  }
+
+  .modifikasi-title {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact {
     display: flex;
     flex-direction: column-reverse;
@@ -297,6 +341,6 @@ nav {
     max-width: 90%;
     padding: 10px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 }
