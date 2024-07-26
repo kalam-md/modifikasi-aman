@@ -18,7 +18,6 @@ nav {
   background-color: #eab62f;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 108px;
 }
 
 .navbar {
@@ -55,6 +54,7 @@ nav {
 .nav-links a {
   font-size: 16px;
   text-decoration: none;
+  font-weight: 400;
   color: black;
 }
 
@@ -63,21 +63,9 @@ nav {
 }
 
 /* home */
-.home {
-  /* margin-top: 98px; */
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 100px;
-}
-
-.home > video {
+.home > iframe {
   width: 100%;
+  height: 100vh;
 }
 
 /* feature */
@@ -284,20 +272,22 @@ nav {
     gap: 15px;
   }
 
-  .home {
-    margin-top: -248px;
+  .home > iframe {
+    width: 100%;
+    height: 30vh;
   }
 
   .feature {
     max-width: 90%;
     padding: 10px;
-    margin-top: -200px;
+    margin-top: 20px;
   }
 
   .feature-body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
+    margin-top: -5px;
   }
 
   .contact {
@@ -308,17 +298,5 @@ nav {
     padding: 10px;
     margin-bottom: 50px;
     margin-top: 50px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .home {
-    margin-top: -290px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .home {
-    margin-top: -320px;
   }
 }
