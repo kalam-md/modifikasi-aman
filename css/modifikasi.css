@@ -17,6 +17,20 @@ nav {
   background-color: #eab62f;
   max-width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.sosmed {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sosmed > a > img {
+  height: 80px;
+  width: 80px;
 }
 
 .navbar {

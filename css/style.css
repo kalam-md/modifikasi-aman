@@ -17,6 +17,9 @@ nav {
   background-color: #eab62f;
   max-width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 
 .navbar {
@@ -126,10 +129,6 @@ nav {
   margin: 0 auto;
   color: white;
   transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-}
-
-.feature-card:hover .feature-card-body {
   opacity: 1;
 }
 
@@ -177,10 +176,6 @@ nav {
   margin: 0 auto;
   color: white;
   transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-}
-
-.feature-card-new:hover .feature-card-new-body {
   opacity: 1;
 }
 
@@ -296,6 +291,17 @@ nav {
 .footer-text {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.sosmed {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sosmed > a > img {
+  height: 80px;
+  width: 80px;
 }
 
 @media screen and (max-width: 600px) {
